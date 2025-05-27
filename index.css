@@ -22,18 +22,19 @@ body {
 }
 
 .button {
-background-color: #4e4b4b;
+background-color: #CCCCCC;
 color: #ffffff;
 padding: 2%;
 }
 
 a{
-  color: white;
+  color: #000000;
   font-size: 160%;
 }
 
 a:hover{
   color: #99FFFF;
+  background-color: #000000;
 }
 
 .white{
