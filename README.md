@@ -20,6 +20,7 @@ For å kjøre programmet mitt, trenger du bare IP-adressen til serveren, som i d
 - [DigitalOcean: How to Install LAMP Stack on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu)
 - [[DataCamp: MySQL Tutorial](https://www.datacamp.com/tutorial/my-sql-tutorial?dc_referrer=https%3A%2F%2Fakademiet.instructure.com%2F)](https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky)
 - [ChatGPT](https://chat.openai.com)
+- https://webaim.org/resources/contrastchecker/
 - Koder fra Canvas
 
 ## Brukertesting
