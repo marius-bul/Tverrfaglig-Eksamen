@@ -15,10 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Hent data fra skjemaet
     $brukernavn = $_POST['brukernavn'];
+    $brukernavn = $_POST['gmail'];
     $passord = password_hash($_POST['passord'], PASSWORD_DEFAULT); // Hasher passordet
 
     // Sett inn bruker i databasen
-    $sql = "INSERT INTO brukere (brukernavn, passord) VALUES ('$brukernavn', '$passord')";
+    $sql = "INSERT INTO brukere (brukernavn, gmail, passord) VALUES ('$brukernavn', '$gmail', '$passord')";
     
 
     
@@ -31,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn->close();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="no">
@@ -47,7 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h1>Registrer deg</h1>
     <form action="registrer.php" method="POST">
         <input type="text" name="brukernavn" placeholder="Brukernavn" required tabindex="1">
-        <input type="password" name="passord" placeholder="Passord" required tabindex="2">
+        <input type="text" name="gmail" placeholder="Gmail" required tabindex="2">
+        <input type="password" name="passord" placeholder="Passord" required tabindex="3">
         <button type="submit" tabindex="3">Registrer</button>
     </form>
     <p class="white">p</p>
