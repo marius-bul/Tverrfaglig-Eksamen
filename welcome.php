@@ -20,8 +20,6 @@ if (!isset($_SESSION['bruker_id'])) {
 <!-- navigasjonsbaren min !-->
 <nav>
     <div class="navnav">
-    <!--<a href="#">Hjem</a>!-->
-
       <a href="adidas.php" tabindex="1">Rate Adidas</a>
     </div>
 </nav>
