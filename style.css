@@ -1,3 +1,18 @@
+body {
+
+  background-color: #fff8dc;
+  color: #000000;
+
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
+
+  line-height: 1.6;
+  font-size: 112.5%;
+
+  padding-top: 0.5%;
+  
+}
+
 nav {
     background-color: #1a1a1a;
     padding: 2%;
