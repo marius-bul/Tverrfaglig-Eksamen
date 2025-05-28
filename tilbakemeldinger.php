@@ -49,5 +49,11 @@ if ($resultat->num_rows > 0) {
 $conn->close();
 ?>
 
+
+<footer>
+  <p>Kontakt: marius@gmail.com</a></p>
+  <p>Lisens: MIT License</p>
+</footer>
+
 </body>
 </html>
