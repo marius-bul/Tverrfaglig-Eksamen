@@ -30,4 +30,10 @@ nav {
   nav a:focus {
     background-color: #333333;
   }
-  
+
+  .AdidasBilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 4%;
+  }
