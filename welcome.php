@@ -22,7 +22,7 @@ if (!isset($_SESSION['bruker_id'])) {
     <div class="navnav">
     <!--<a href="#">Hjem</a>!-->
 
-      <a href="supreme.php" tabindex="1">Rate Adidas</a>
+      <a href="adidas.php" tabindex="1">Rate Adidas</a>
     </div>
 </nav>
 
@@ -30,7 +30,7 @@ if (!isset($_SESSION['bruker_id'])) {
   <!-- Det brukeren ser på siden!-->
   <h1>Velkommen, <?php echo $_SESSION['brukernavn']; ?>!</h1>
 
-  <p>Du er nå logget inn på siden, når du føler deg klar trykk på en av merkene oppe til høyre og begynne å rate!</p>
+  <p>Du er nå logget inn på siden, når du føler deg klar trykk på en av merkene oppe til høyre og begynn meg tilbakemeldinger!</p>
 
 <!--Bilder på siden for å fylle tom plass!-->
 
@@ -39,7 +39,7 @@ if (!isset($_SESSION['bruker_id'])) {
     <tr>
          <td><img src="https://logotyp.us/file/adidas.svg" height="300px" width="300px" alt="Bilde av et normalt adidas logo"></td>
          <td><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/adidas-4-logo.png" height="250px" width="300px" alt="Adidas logo med annerledes form"></td>
-         <td><img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/02/17202944/Adidas-Logo-2002.jpg" height="250px" width="300px" alt="Adidas logo fra 2005"></td>
+         <td><img src="https://logo.com/image-cdn/images/kts928pd/production/30f9152b6e5dc09009c06f502fe1c02abbffc0bf-1600x900.png?w=1920&q=72&fm=webp" height="250px" width="300px" alt="Adidas logo fra 2005"></td>
 
     </tr>
 </table>
@@ -48,3 +48,4 @@ if (!isset($_SESSION['bruker_id'])) {
 </body>
 
 </html>
+
