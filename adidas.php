@@ -16,9 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Hent data fra skjemaet
     $merke = $_POST['merke'];
     $tilbakemelding = $_POST['tilbakemelding'];
+    $stjerner = $_POST['stjerner'];
 
     // Sett inn bruker i databasen
-    $sql = "INSERT INTO tilbakemelding (merke, tilbakemelding) VALUES ('$merke', '$tilbakemelding')";
+    $sql = "INSERT INTO tilbakemelding (merke, tilbakemelding, stjerner) VALUES ('$merke', '$tilbakemelding', '$stjerner')";
     
 
     
@@ -32,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="style.css">
     <title>Adidas</title>
 </head>
+
+
 <body>
 
 <nav>
@@ -50,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <a href="welcome.php" tabindex="1">Hjem</a>
     </div>
 </nav>
-
 
 <h1>Adidas Reklamer</h1>
 <p>For å sende inn tilbakemeldinger må du skrive inn din melding inne boksen der det står "din tilbakebelding her"</p>
@@ -76,16 +77,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </center>
 
 
-
 <center>
-    <p>For å begynne skriv in "Adidas og deretter bilde nummer"</p>
+    <p>tilbakemelding, stjerne rating</p>
     <form action="adidas.php" method="POST">
-        <input type="text" name="merke" placeholder="Adidas + Bildenummer" required tabindex="4">
-        <input type="text" name="tilbakemelding" placeholder="tilbakemelding" required tabindex="5">
-        <button type="submit" tabindex="6">send inn svar</button>
+        <input type="hidden" name="merke" value="Adidas 1">
+        <input type="text" name="tilbakemelding" placeholder="tilbakemelding for bilde 1" required tabindex="4">
+        <input type="number" name="stjerner" placeholder="stjerner (1-5)" min="1" max="5" required tabindex="5">
+        <button type="submit" tabindex="6">Send inn svar</button>
+    </form>
+
+    <form action="adidas.php" method="POST">
+        <input type="hidden" name="merke" value="Adidas 2">
+        <input type="text" name="tilbakemelding" placeholder="tilbakemelding for bilde 2" required tabindex="7">
+        <input type="number" name="stjerner" placeholder="stjerner (1-5)" min="1" max="5" required tabindex="8">
+        <button type="submit" tabindex="9">Send inn svar</button>
+    </form>
+
+    <form action="adidas.php" method="POST">
+        <input type="hidden" name="merke" value="Adidas 3">
+        <input type="text" name="tilbakemelding" placeholder="tilbakemelding for bilde 3" required tabindex="10">
+        <input type="number" name="stjerner" placeholder="stjerner (1-5)" min="1" max="5" required tabindex="11">
+        <button type="submit" tabindex="12">Send inn svar</button>
     </form>
 </center>
-
 
 </body>
 </html>
