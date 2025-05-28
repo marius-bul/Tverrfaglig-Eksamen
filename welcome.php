@@ -16,15 +16,13 @@ if (!isset($_SESSION['bruker_id'])) {
     <link rel="stylesheet" href="style.css">
     <title>Velkommen</title>
 </head>
+
 <body>
+  
 <!-- navigasjonsbaren min !-->
 <nav>
-    <div class="nav-venstre">
-   <!--<a href="#">Hjem</a>!-->
-    </div>
-
-    
-    <div class="nav-høyre">
+    <div class="nav">
+   <!--<a href="#">Hjem</a>!-->    
       <a href="supreme.php" tabindex="1">Rate Supreme</a>
     </div>
 </nav>
