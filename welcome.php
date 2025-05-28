@@ -19,8 +19,10 @@ if (!isset($_SESSION['bruker_id'])) {
 <body>
 <!-- navigasjonsbaren min !-->
 <nav>
-    <div class="navnav">
-      <a href="adidas.php" tabindex="1">Rate Adidas</a>
+      <div class="navnav">
+      <a href="adidas.php" tabindex="1" autofocus>Rate Adidas</a>
+      <a href="tilbakemeldinger.php" tabindex="1">Se tilbakemeldinger</a>
+
     </div>
 </nav>
 
@@ -43,7 +45,16 @@ if (!isset($_SESSION['bruker_id'])) {
 </table>
 </center>
 
+<button class="button"><a href="index.html"tabindex="2" >Logg ut</a></button>
+
+
 </body>
+
+<footer>
+  <p>Kontakt: marius@gmail.com</a></p>
+  <p>Lisens: MIT License</p>
+</footer>
+
 
 </html>
 

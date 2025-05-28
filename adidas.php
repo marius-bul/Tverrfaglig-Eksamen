@@ -101,5 +101,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
 </center>
 
+<footer>
+  <p>Kontakt: marius@gmail.com</a></p>
+  <p>Lisens: MIT License</p>
+</footer>
+
 </body>
 </html>
