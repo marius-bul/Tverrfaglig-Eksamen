@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Hent data fra skjemaet
     $brukernavn = $_POST['brukernavn'];
-    $brukernavn = $_POST['gmail'];
+    $gmail = $_POST['gmail'];
     $passord = password_hash($_POST['passord'], PASSWORD_DEFAULT); // Hasher passordet
 
     // Sett inn bruker i databasen
