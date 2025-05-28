@@ -42,3 +42,34 @@ nav {
     padding: 2%;
     font-size: 112.5%;
     }
+
+    /* CHATGPT DESIGNET MEDIA UNDER!! */
+
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 100%;
+        padding-top: 1%;
+      }
+    
+      nav {
+        text-align: center;
+        padding: 4% 2%;
+      }
+    
+      nav a {
+        padding: 8px 12px;
+        font-size: 110%;
+      }
+    
+      .AdidasBilder {
+        flex-direction: column;
+        gap: 10%;
+        justify-content: center;
+      }
+    
+      .button {
+        padding: 4% 0;
+        font-size: 110%;
+      }
+    }
+    
