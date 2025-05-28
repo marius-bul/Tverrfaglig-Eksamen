@@ -22,7 +22,7 @@ if (!isset($_SESSION['bruker_id'])) {
     <div class="navnav">
     <!--<a href="#">Hjem</a>!-->
 
-      <a href="supreme.php" tabindex="1">Rate Gucci</a>
+      <a href="supreme.php" tabindex="1">Rate Adidas</a>
     </div>
 </nav>
 
@@ -34,11 +34,16 @@ if (!isset($_SESSION['bruker_id'])) {
 
 <!--Bilder på siden for å fylle tom plass!-->
 
+<center> 
 <table>
     <tr>
-         <td><img src="" height="" length="" alt=""></td>   <td>  </td>  
+         <td><img src="https://logotyp.us/file/adidas.svg" height="300px" width="300px" alt="Bilde av et normalt adidas logo"></td>
+         <td><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/adidas-4-logo.png" height="250px" width="300px" alt="Adidas logo med annerledes form"></td>
+         <td><img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/02/17202944/Adidas-Logo-2002.jpg" height="250px" width="300px" alt="Adidas logo fra 2005"></td>
+
     </tr>
 </table>
+</center>
 
 </body>
 
