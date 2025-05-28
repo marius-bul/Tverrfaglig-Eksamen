@@ -47,15 +47,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="no">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <title>Logg inn</title>
 </head>
 <body>
+<div class="container">
+
     <h1>Logg inn</h1>
     <form action="login.php" method="POST">
         <input type="text" name="brukernavn" placeholder="Brukernavn" required tabindex="1">
         <input type="password" name="passord" placeholder="Passord" required tabindex="2">
         <button type="submit" tabindex="3">Logg inn</button>
     </form>
-    <a href="index.html" tabindex="4">tilbake</a>
+    <p class="white">p</p>
+
+    <button class="button"><a href="index.html"tabindex="4" >tilbake</a></button>
+
+</div>
+
 </body>
 </html>
