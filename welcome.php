@@ -13,6 +13,7 @@ if (!isset($_SESSION['bruker_id'])) {
 <head>
     <link rel="stylesheet" href="nav.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Velkommen</title>
 </head>
 <body>
