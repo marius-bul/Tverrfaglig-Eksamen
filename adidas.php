@@ -1,4 +1,7 @@
 <?php
+
+$melding = "";
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Koble til databasen
     $host = "localhost";
@@ -18,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tilbakemelding = $_POST['tilbakemelding'];
     $stjerner = $_POST['stjerner'];
 
+
     // Sett inn bruker i databasen
     $sql = "INSERT INTO tilbakemelding (merke, tilbakemelding, stjerner) VALUES ('$merke', '$tilbakemelding', '$stjerner')";
     
@@ -33,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,15 +48,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 
+
 <body>
 
 <nav>
     <div class="navnav">
-    <!--<a href="#">Hjem</a>!-->
-
       <a href="welcome.php" tabindex="1">Hjem</a>
+      <a href="tilbakemeldinger.php" tabindex="2">se tilbakemeldinger</a>
+
     </div>
 </nav>
+
 
 <h1>Adidas Reklamer</h1>
 <p>For å sende inn tilbakemeldinger må du skrive inn din melding inne boksen der det står "din tilbakebelding her"</p>
@@ -59,17 +66,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <center> 
     <div class="AdidasBilder">
 <div>
-<img src="https://pkmannes.wordpress.com/wp-content/uploads/2016/10/adidas-reklame.jpg" height="250px" width="300px" alt="Bilde av et normalt adidas logo"><br>
+<img src="https://pkmannes.wordpress.com/wp-content/uploads/2016/10/adidas-reklame.jpg" height="250px" width="300px" alt="Adidas reklame 1"><br>
 <p>Bilde 1</p>
 </div> 
 
 <div>
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7f6b0941691055.58f14ebd0ded8.jpg" height="250px" width="300px" alt="Adidas logo med annerledes form"><br>
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7f6b0941691055.58f14ebd0ded8.jpg" height="250px" width="300px" alt="Adidas reklame 2"><br>
 <p>Bilde 2</p>
 </div> 
 
 <div>
-<img src="https://image.euroman.dk/4769070.webp?imageId=4769070&width=1412&height=848&format=webp" height="250px" width="300px" alt="Adidas logo fra 2005">
+<img src="https://image.euroman.dk/4769070.webp?imageId=4769070&width=1412&height=848&format=webp" height="250px" width="300px" alt="Adidas reklame 3">
 <p>Bilde 3</p>
 </div> 
 
@@ -77,7 +84,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </center>
 
 
+
 <center>
+
+
     <p>tilbakemelding, stjerne rating</p>
     <form action="adidas.php" method="POST">
         <input type="hidden" name="merke" value="Adidas 1">
